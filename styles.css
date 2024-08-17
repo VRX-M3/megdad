@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    margin: 0;
+}
+
+#toggleSidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #555;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#toggleSidebar:hover {
+    background: #777;
+}
+
+aside {
+    width: 250px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 15px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    margin-left: 15px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
